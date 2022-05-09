@@ -8,13 +8,14 @@
   width: 360px;
   height: 720px;
   padding: 40px;
-  background-color: #fafbfe;
+  background: linear-gradient(0deg, colors.$W_BLACK 32%, colors.$W_LIGHT_BLUE 100%);
+  background-color: colors.$W_BLACK;
   border-radius: 60px;
 
   h1 {
     font-size: 24px;
     font-weight: 600;
-    color: colors.$BIG_TITLE;
+    color: colors.$WHITE;
     text-align: center;
   }
 
@@ -24,6 +25,7 @@
     h2 {
       font-size: 14px;
       font-weight: 600;
+      color: colors.$W_DARK_WHITE;
     }
 
     ul {
@@ -32,7 +34,7 @@
 
     li {
       padding: 24px 14px;
-      background-color: rgba(colors.$BLACK, 10%);
+      background-color: rgba(colors.$W_DARK_GREY, 10%);
       border-radius: 20px;
 
       + li {
@@ -49,6 +51,7 @@
 
       dt,
       dd {
+        color: colors.$WHITE;
         text-align: center;
       }
 
@@ -75,6 +78,10 @@
           font-size: 10px;
           vertical-align: top;
         }
+      }
+
+      svg {
+        fill: white;
       }
     }
   }
